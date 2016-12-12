@@ -1,0 +1,44 @@
+File communication (Express)
+    Client asks for the server for a file (Ex: playerImg.png)
+    
+URL = mywebsite.com     2000        /client/playerImg.png
+      DOMAIN            PORT        PATH
+      laptop            usbport     query
+      
+      The domain is local host
+      
+Package communication
+    Client send data to the server
+    Server send data to the client
+    
+Setup:
+    npm install socket.io
+    npm install mongodb
+    
+Setup the Database
+
+run the database server
+mongod
+
+run the database query
+mongo
+
+create database
+	use myGame
+	
+create collection
+	db.createCollection("account");
+	db.createCollection("progress");
+	
+add document
+	db.account.insert({username:"bob", password:"pass"});
+	db.account.insert({username:"bob1", password:"pass1"});
+
+Setup the application
+    run the server in cmd
+    node app.js
+
+
+
+
+    
